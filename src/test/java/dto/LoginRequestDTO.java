@@ -1,5 +1,4 @@
-package dto.request;
-
+package dto;
 
 public class LoginRequestDTO {
     private String email;

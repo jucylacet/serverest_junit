@@ -1,4 +1,4 @@
-package dto.request;
+package dto;
 
 public class UsuarioRequestDTO {
     private String nome;
@@ -6,14 +6,18 @@ public class UsuarioRequestDTO {
     private String password;
     private String administrador;
 
+
+    private String _id;
+
     public UsuarioRequestDTO(){
 
     }
-    public UsuarioRequestDTO(String nome, String email, String password, String administrador) {
+    public UsuarioRequestDTO(String nome, String email, String password, String administrador, String _id) {
         this.nome = nome;
         this.email = email;
         this.password = password;
         this.administrador = administrador;
+        this._id = _id;
     }
 
     public String getNome() {
@@ -43,4 +47,7 @@ public class UsuarioRequestDTO {
     public void setAdministrador(String administrador) {
         this.administrador = administrador;
     }
+
+    public String get_id() { return _id;}
+    public void set_id(String _id) {this._id = _id;}
 }
