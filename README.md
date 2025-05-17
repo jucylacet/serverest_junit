@@ -11,3 +11,4 @@ ServeRest - Documentação oficial
 
 👨‍🎓
 Este projeto foi desenvolvido como parte da disciplina de Automação de Testes no Backend da Pós-graduação em Quality Assurance e RPA da UNIESP.
+Equipe: Erivaldo de Sousa Barbosa | Isis Angelis | João Carlos Fidelis | Juliêta Araujo | Jucymara Lacet
