@@ -18,13 +18,13 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void loginOk() {
-        LoginRequestDTO login = new LoginRequestDTO("pnpc@emailteste.com", "1234");
+        LoginRequestDTO login = new LoginRequestDTO("fulano@qa.com", "teste");
 
         LoginResponseDTO response = given()
                 .contentType(ContentType.JSON).log().all()
                 .body(login)
                 .when()
-                .post("login")
+                .post("/login")
                 .then().statusCode(200).log().all()
                 .extract().as(LoginResponseDTO.class);
 

@@ -7,17 +7,17 @@ public class UsuarioRequestDTO {
     private String administrador;
 
 
-    private String _id;
+    //private String _id;
 
     public UsuarioRequestDTO(){
 
     }
-    public UsuarioRequestDTO(String nome, String email, String password, String administrador, String _id) {
+    public UsuarioRequestDTO(String nome, String email, String password, String administrador) {
         this.nome = nome;
         this.email = email;
         this.password = password;
         this.administrador = administrador;
-        this._id = _id;
+        //this._id = _id;
     }
 
     public String getNome() {
@@ -48,6 +48,6 @@ public class UsuarioRequestDTO {
         this.administrador = administrador;
     }
 
-    public String get_id() { return _id;}
-    public void set_id(String _id) {this._id = _id;}
+    //public String get_id() { return _id;}
+    //public void set_id(String _id) {this._id = _id;}
 }

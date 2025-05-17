@@ -1,16 +1,18 @@
 package dto;
-
 public class ListarUsuariosResponseDTO {
-    public ListarUsuariosResponseDTO(int quantidade, UsuarioRequestDTO[] usuarios) {
+    private int quantidade;
+    private UsuarioResponseDTO[] usuarios;
+
+    public ListarUsuariosResponseDTO() {
+    }
+
+    public ListarUsuariosResponseDTO(int quantidade, UsuarioResponseDTO[] usuarios) {
         this.quantidade = quantidade;
         this.usuarios = usuarios;
     }
 
     public ListarUsuariosResponseDTO(int quantidade) {
         this.quantidade = quantidade;
-    }
-
-    public ListarUsuariosResponseDTO() {
     }
 
     public int getQuantidade() {
@@ -21,14 +23,12 @@ public class ListarUsuariosResponseDTO {
         this.quantidade = quantidade;
     }
 
-    public UsuarioRequestDTO[] getUsuarios() {
+    public UsuarioResponseDTO[] getUsuarios() {
         return usuarios;
     }
 
-    public void setUsuarios(UsuarioRequestDTO[] usuarios) {
+    public void setUsuarios(UsuarioResponseDTO[] usuarios) {
         this.usuarios = usuarios;
     }
 
-    private int quantidade;
-    private UsuarioRequestDTO [] usuarios;
 }

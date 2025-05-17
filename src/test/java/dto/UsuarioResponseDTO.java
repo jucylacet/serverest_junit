@@ -1,7 +1,9 @@
 package dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class UsuarioResponseDTO {
     private String nome;
     private String email;

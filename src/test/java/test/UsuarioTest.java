@@ -35,7 +35,7 @@ public class UsuarioTest extends BaseTest {
                 .contentType(ContentType.JSON).log().all()
                 .body(usuarioDTO)
                 .when()
-                .post("usuarios")
+                .post("/usuarios")
                 .then().statusCode(201).log().all();
 
 
