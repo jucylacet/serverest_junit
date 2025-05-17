@@ -6,16 +6,6 @@ A API utilizada para os testes é a [ServeRest](https://serverest.dev/), uma API
 
 ---
 
-## 🔧 Tecnologias Utilizadas
-
-- Java 24.0.1
-- JUnit  
-- Maven  
-- IntelliJ IDEA  
-- ServeRest API  
-
----
-
 📄 Referência
 ServeRest - Documentação oficial
 
